@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #0e0101;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: black;
+}
+
+.Home {
+    height: 100vh;
+    background-image: url(lentenpic.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding:0 10%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(255, 248, 248);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a :hover{
+    color: #fdf6f6;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #979595;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+
+.PalmSunday {
+    background-image: url('palmsunday2.jpg');
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.PalmSunday .PalmDiv:hover{
+    color: #081b2900;
+    background-image: url('palmsunday.jpg'); 
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.PalmSunday .PalmDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.6s ease-in-out;
+}
+
+.PalmSunday h3{
+    text-decoration: underline;
+}
+
+.PalmSunday p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+ 
+
+.HolyMonday {
+    background-image: url('holymonday.png'); 
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.HolyMonday .MonDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.5s ease-in-out;
+}
+.HolyMonday .MonDiv:hover{
+    color: #081b2900;
+    background-image: url('monday.jpg');   
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.HolyMonday h3{
+    text-decoration: underline;
+}
+
+.HolyMonday p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+.HolyTuesday{
+    background-image: url('holytuesday.jpeg'); 
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.HolyTuesday .TuesDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.5s ease-in-out;
+}
+.HolyTuesday .TuesDiv:hover{
+    color: #081b2900;
+    background-image: url('tuesday.jpg');  
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.TuesDiv h3{
+    text-decoration: underline;
+}
+
+.TuesDiv p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+.HolyWednesday{
+    background-image: url('holywednesday.jpg'); 
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.HolyWednesday .WedDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.5s ease-in-out;
+}
+.HolyWednesday .WedDiv:hover{
+    color: #081b2900;
+    background-image: url('wednesday.jpg');   
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.WedDiv h3{
+    text-decoration: underline;
+}
+
+.WedDiv p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+.MaundyThursday {
+    background-image: url('holythursday.jpeg'); 
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.MaundyThursday .ThursDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.5s ease-in-out;
+}
+.MaundyThursday .ThursDiv:hover{
+    color: #081b2900;
+    background-image: url('thursday (2).jpg');   
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.MaundyThursday h3{
+    text-decoration: underline;
+}
+
+.MaundyThursday p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.GoodFriday {
+    background-image: url('holyfriday.jpg'); 
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.GoodFriday .FriDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.5s ease-in-out;
+}
+.GoodFriday .FriDiv:hover{
+    color: #081b2900;
+    background-image: url('friday.jpg');  
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.GoodFriday h3{
+    text-decoration: underline;
+}
+
+.GoodFriday p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.HolySaturday {
+    background-image: url('holysaturday.jpg'); 
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.HolySaturday .SatDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.5s ease-in-out;
+}
+.HolySaturday .SatDiv:hover{
+    color: #081b2900;
+    background-image: url('saturday.png');   
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.HolySaturday h3{
+    text-decoration: underline;
+}
+
+.HolySaturday p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+.EasterSunday {
+    background-image: url('eastersunday.jpg'); 
+    background-size: cover;
+    border: 2pt solid black;
+    border-radius: 30pt;
+    width: 280pt;
+    height: 250pt;
+}
+
+.EasterSunday .SunDiv{
+    background-color: rgba(184, 184, 184, 0.671);
+    padding: 10pt 20pt;
+    margin: 0pt 20pt;
+    border-radius: 20pt;
+    transition: transform 0.5s ease-in-out;
+}
+.EasterSunday .SunDiv:hover{
+    color: #081b2900;
+    background-image: url('holythursday.jpeg');   
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.EasterSunday h3{
+    text-decoration: underline;
+}
+
+.EasterSunday p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
